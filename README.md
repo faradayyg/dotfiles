@@ -7,10 +7,21 @@ Installing these configs will turn your neovim into a full-featured IDE (for pyt
 Screenshots:
 With Python:
 <img width="937" alt="Screenshot 2024-03-30 at 06 45 43" src="https://github.com/faradayyg/dotfiles/assets/22411520/acbf7366-a991-426d-bf65-3e3a0d20c042">
+
 With JS
 <img width="1354" alt="Screenshot 2024-03-30 at 06 47 19" src="https://github.com/faradayyg/dotfiles/assets/22411520/c0669404-d769-4f83-ac93-d6edbcc6e573">
 
 Webicons + Telescope
 <img width="1190" alt="Screenshot 2024-03-30 at 06 48 05" src="https://github.com/faradayyg/dotfiles/assets/22411520/9e7ff0d0-525b-428d-af84-790ce567dc18">
+
+## Other useful installed plugins
+- harpoon to mark files and easily jump to them
+- nvim-cmp for autocompletion
+- floaterm + Vimtest to run tests in a floating window
+- lspimport to auto import stuff that was declared
+- noice to show vim command line like spotlight search in Mac
+- scrolleof for extra space at the end of the file when you have scrolled to the bottom
+- numToStr/Comment to easily comment/uncomment lines
+- Dressing for ... stuff
 
 
