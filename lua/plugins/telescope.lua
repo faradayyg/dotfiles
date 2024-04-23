@@ -9,7 +9,7 @@ return {
 			vim.keymap.set("n", "<C-p>", builtin.find_files, {})
 			vim.keymap.set("n", "<leader>g", builtin.live_grep, {})
 			vim.keymap.set("n", "<leader>b", builtin.buffers, {})
-			vim.keymap.set("n", "<leader>ff", builtin.current_buffer_fuzzy_find, {})
+			vim.keymap.set("n", "<leader>f", builtin.current_buffer_fuzzy_find, {})
 
 			vim.api.nvim_set_keymap("n", "<space>fb", ":Telescope file_browser<CR>", { noremap = true })
 			vim.keymap.set("n", "gr", builtin.lsp_references, {})
@@ -21,7 +21,9 @@ return {
 	{
 		"nvim-telescope/telescope-ui-select.nvim",
 		config = function()
-			require("telescope").setup({
+			local telescope = require("telescope")
+
+			telescope.setup({
 				extensions = {
 					["ui-select"] = {
 						require("telescope.themes").get_dropdown({
@@ -43,7 +45,7 @@ return {
 				},
 			})
 
-			require("telescope").load_extension("ui-select")
+			telescope.load_extension("ui-select")
 		end,
 	},
 }

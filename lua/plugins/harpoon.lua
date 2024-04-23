@@ -16,5 +16,6 @@ return {
 		require("telescope").load_extension("harpoon")
 		vim.keymap.set("n", "<C-t>", mark_and_notify)
 		vim.keymap.set("n", "<C-h>", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<CR>")
+		vim.keymap.set("n", "<leader>hh", "<cmd>Telescope harpoon marks<CR>")
 	end,
 }
