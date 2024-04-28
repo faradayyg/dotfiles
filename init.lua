@@ -17,6 +17,20 @@ vim.opt.cursorline = true
 vim.opt.termguicolors = true
 vim.cmd("set wildignore=*/node_modules/*")
 
+local keymap = vim.keymap
+
+keymap.set("n", "nh", ":noh <CR>", { desc = "Clear search highlights" })
+keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split windows vertically" })
+keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close split" })
+keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal" })
+
+-- Tabs
+keymap.set("n", "to", "<cmd>tabnew<CR>", { desc = "Opens new tab" })
+keymap.set("n", "tx", "<cmd>tabclose<CR>", { desc = "Closes new tab" })
+keymap.set("n", "tn", "<cmd>tabn<CR>", { desc = "Next tab" })
+keymap.set("n", "tf", "<cmd>tabnew %<CR>", { desc = "New tab with current buffer" })
+keymap.set("n", "tp", "<cmd>tabp<CR>", { desc = "Previous tab" })
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({

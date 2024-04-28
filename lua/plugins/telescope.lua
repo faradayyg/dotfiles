@@ -7,12 +7,16 @@ return {
 			local builtin = require("telescope.builtin")
 
 			vim.keymap.set("n", "<C-p>", builtin.find_files, {})
-			vim.keymap.set("n", "<leader>g", builtin.live_grep, {})
-			vim.keymap.set("n", "<leader>b", builtin.buffers, {})
-			vim.keymap.set("n", "<leader>f", builtin.current_buffer_fuzzy_find, {})
+			vim.keymap.set("n", "<leader>g", builtin.live_grep, { desc = "Live grep" })
+			vim.keymap.set("n", "<leader>b", builtin.buffers, { desc = "Show buffers in telescope" })
+			vim.keymap.set(
+				"n",
+				"<leader>ff",
+				builtin.current_buffer_fuzzy_find,
+				{ desc = "Fuzzy find in current buffer" }
+			)
 
-			vim.api.nvim_set_keymap("n", "<space>fb", ":Telescope file_browser<CR>", { noremap = true })
-			vim.keymap.set("n", "gr", builtin.lsp_references, {})
+			vim.keymap.set("n", "gr", builtin.lsp_references, { desc = "Go to LSP references" })
 			vim.keymap.set("n", "gd", builtin.lsp_definitions, {})
 			vim.keymap.set("n", "ds", builtin.lsp_document_symbols, {})
 			vim.keymap.set("n", "dS", builtin.lsp_dynamic_workspace_symbols, {})
