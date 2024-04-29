@@ -19,10 +19,9 @@ return {
 			"nvim-lua/plenary.nvim",
 		},
 		keys = {
-			{ "lG", "<cmd>LazyGit<CR>", desc = "Toggle Lazy Git" },
+			{ "<leader>git", "<cmd>LazyGit<CR>", desc = "Toggle Lazy Git" },
 		},
 		config = function()
-			vim.keymap.set("n", "lG", ":LazyGit<CR>", {})
 			require("telescope").load_extension("lazygit")
 		end,
 	},

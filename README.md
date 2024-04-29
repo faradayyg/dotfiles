@@ -1,4 +1,5 @@
 # Dotfiles
+
 This repo contains my configurations for NeoVim and Plugins setup using the Lazy package manager,
 LSP setup using Masonry and nvim-lsp with some other handy configs.
 
@@ -14,7 +15,15 @@ With JS
 Webicons + Telescope
 <img width="1190" alt="Screenshot 2024-03-30 at 06 48 05" src="https://github.com/faradayyg/dotfiles/assets/22411520/9e7ff0d0-525b-428d-af84-790ce567dc18">
 
+## Pre-requisits
+
+- fzf
+- fd
+- ripgrep
+- lazygit
+
 ## Other useful installed plugins
+
 - harpoon to mark files and easily jump to them
 - nvim-cmp for autocompletion
 - floaterm + Vimtest to run tests in a floating window
@@ -23,5 +32,3 @@ Webicons + Telescope
 - scrolleof for extra space at the end of the file when you have scrolled to the bottom
 - numToStr/Comment to easily comment/uncomment lines
 - Dressing for ... stuff
-
-
