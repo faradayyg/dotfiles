@@ -13,7 +13,7 @@ return {
 			})
 		end,
 	},
-	-- { "github/copilot.vim" },
+	{ "github/copilot.vim" },
 	{ "wakatime/vim-wakatime", lazy = false },
 	{ "voldikss/vim-floaterm" },
 }

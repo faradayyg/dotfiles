@@ -5,11 +5,7 @@ return {
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		config = function()
 			vim.opt.termguicolors = true
-			require("bufferline").setup({
-				options = {
-					mode = "tabs",
-				},
-			})
+			require("bufferline").setup({})
 		end,
 	},
 	{

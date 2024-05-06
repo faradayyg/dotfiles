@@ -28,7 +28,7 @@ return {
 			},
 		})
 
-		vim.keymap.set("n", "<C-b>", ":Neotree toggle<CR>", {})
-		vim.keymap.set("n", "<C-n>", ":Neotree reveal<CR>", {})
+		vim.keymap.set("n", "<C-b>", "<cmd>Neotree toggle<CR>", {})
+		vim.keymap.set("n", "<C-n>", "<cmd>Neotree reveal<CR>", {})
 	end,
 }

@@ -32,6 +32,10 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Next tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "New tab with current buffer" })
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Previous tab" })
 
+-- Buffers
+keymap.set("n", "[b", "<cmd>bprev<CR>", { desc = "Previous Buffer" })
+keymap.set("n", "]b", "<cmd>bnext<CR>", { desc = "Next Buffer" })
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
