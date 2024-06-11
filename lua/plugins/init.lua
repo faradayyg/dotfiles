@@ -15,5 +15,4 @@ return {
 	},
 	{ "github/copilot.vim" },
 	{ "wakatime/vim-wakatime", lazy = false },
-	{ "voldikss/vim-floaterm" },
 }

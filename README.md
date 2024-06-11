@@ -21,6 +21,9 @@ Webicons + Telescope
 - fd
 - ripgrep
 - lazygit
+- tmux
+- neovim
+- tmuxifier
 
 ## Other useful installed plugins
 

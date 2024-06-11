@@ -24,6 +24,10 @@ keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split windows vertically" })
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close split" })
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal" })
 keymap.set("n", "<leader>ss", "<cmd>w<CR>", { desc = "Save file" })
+keymap.set("n", "<leader>sh", "<C-w>h<CR>", { desc = "Move to left pane" })
+keymap.set("n", "<leader>sj", "<C-w>j<CR>", { desc = "Move to down pane" })
+keymap.set("n", "<leader>sk", "<C-w>k<CR>", { desc = "Move to top pane" })
+keymap.set("n", "<leader>sl", "<C-w>l<CR>", { desc = "Move to right pane" })
 
 -- Tabs
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Opens new tab" })

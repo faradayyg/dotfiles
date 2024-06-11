@@ -1,8 +1,11 @@
 return {
 	"vim-test/vim-test",
+	dependencies = {
+		"preservim/vimux",
+	},
 	config = function()
 		vim.cmd([[
-            let test#strategy = "floaterm"
+            let test#strategy = "vimux"
             let test#neovim#term_position = "botright"
             let test#neovim#term_opener = "tabnew"
             let test#neovim#term_quit = "tabclose"
