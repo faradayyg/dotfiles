@@ -56,3 +56,6 @@ vim.opt.rtp:prepend(lazypath)
 local opts = {}
 
 require("lazy").setup({ { import = "plugins" }, { import = "plugins.lsp" } }, opts)
+
+-- Disable copilot by default
+vim.cmd("Copilot disable")
