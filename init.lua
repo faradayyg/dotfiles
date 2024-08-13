@@ -39,6 +39,8 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Previous tab" })
 -- Buffers
 keymap.set("n", "[b", "<cmd>bprev<CR>", { desc = "Previous Buffer" })
 keymap.set("n", "]b", "<cmd>bnext<CR>", { desc = "Next Buffer" })
+keymap.set("n", "bx", "<cmd>bd<CR>", { desc = "Close current Buffer" })
+keymap.set("n", "bxa", "<cmd>%bd | e#<CR>", { desc = "Close all other Buffers" })
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
