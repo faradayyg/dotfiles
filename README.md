@@ -27,11 +27,10 @@ Webicons + Telescope
 
 ## Other useful installed plugins
 
-- harpoon to mark files and easily jump to them
 - nvim-cmp for autocompletion
-- floaterm + Vimtest to run tests in a floating window
+- Vimtest to run tests, uses tmux to start a new terminal
 - lspimport to auto import stuff that was declared
-- noice to show vim command line like spotlight search in Mac
+- snacks nvim with a bunch of defaults
 - scrolleof for extra space at the end of the file when you have scrolled to the bottom
 - numToStr/Comment to easily comment/uncomment lines
 - Dressing for ... stuff

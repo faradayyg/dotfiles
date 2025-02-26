@@ -9,10 +9,9 @@ return {
 			require("catppuccin").setup({
 				flavour = "mocha",
 				show_end_of_buffer = true,
-				transparent_background = true,
+				transparent_background = false,
 			})
 		end,
 	},
-	{ "github/copilot.vim" },
 	{ "wakatime/vim-wakatime", lazy = false },
 }

@@ -16,6 +16,8 @@ vim.cmd("set completeopt=menuone,noinsert,noselect")
 vim.opt.cursorline = true
 vim.opt.termguicolors = true
 vim.cmd("set wildignore=*/node_modules/*")
+vim.opt.timeoutlen = 1500
+vim.opt.ttimeoutlen = 0
 
 local keymap = vim.keymap
 

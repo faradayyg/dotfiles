@@ -10,7 +10,7 @@ return {
             let test#neovim#term_opener = "tabnew"
             let test#neovim#term_quit = "tabclose"
             let test#python#runner = "pytest"
-            let test#python#pytest#options = "-s --color=yes -vv --pdb"
+            let test#python#pytest#options = "--pdb --color=yes -svv"
         ]])
 		vim.keymap.set("n", "<leader>0", "<cmd>TestFile<CR>", {})
 		vim.keymap.set("n", "<leader>9", "<cmd>TestNearest<CR>", {})
