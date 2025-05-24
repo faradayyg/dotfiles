@@ -48,6 +48,31 @@ return {
 		lspconfig.pyright.setup({
 			on_attach = on_attach,
 			capabilities = capabilities,
+			settings = {
+				basedpyright = {
+					reportMissingTypeStubs = true,
+					disableLanguageServices = false,
+					disableOrganizeImports = false,
+					disableTaggedHints = false,
+					enableTypeIgnoreComments = true,
+					analysis = {
+						inlayHints = {
+							variableTypes = true,
+							callArgumentNames = true,
+						},
+						diagnosticMode = "openFilesOnly",
+						autoImportCompletions = true,
+						autoSearchPaths = true,
+						useLibraryCodeForTypes = true,
+						reportAttributeAccessIssue = false,
+					},
+				},
+			},
+		})
+
+		lspconfig.ruff.setup({
+			on_attach = on_attach,
+			capabilities = capabilities,
 		})
 
 		lspconfig.ts_ls.setup({
